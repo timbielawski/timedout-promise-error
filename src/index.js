@@ -15,4 +15,3 @@ const timedoutPromise = (promise, ms = 1000, error = {}) => {
   return Promise.race([promise, timeout]);
 };
 export default timedoutPromise;
-A
