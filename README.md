@@ -26,7 +26,7 @@ try {
     const response = await timedoutPromiseError(fetch('https://www.somewhere.com'), 5000, {
       status: 504
     });
-} catch(error) {
+} catch (error) {
     console.log(error.status); //504
     console.log(error.stack); // Error.stack
 }
@@ -48,7 +48,7 @@ try {
     const response = await timedoutPromiseError(fetch('https://www.somewhere.com'), 5000, {
       status: 504
     });
-} catch(error) {
+} catch (error) {
     console.log(error.status); //504
     console.log(error.stack); // Error.stack
 }
