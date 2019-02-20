@@ -36,7 +36,9 @@ try {
 * * *
 
 ## API
-timedout-promise-error allows you to put a timeout on a promise while providing a custom error. Your error is returned in a Error so you get the error stack too.
+timedout-promise-error allows you to put a timeout on a promise while providing a custom error for the timeout. 
+Your error is returned in a Error so you get the error stack too.
+If the passed in promise has an error, it functions as expected
 
 ### `timedoutPromiseError(somePromise: Object, timeout: Number, error: Object)`
 
