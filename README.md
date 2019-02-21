@@ -27,7 +27,7 @@ try {
       status: 504,  url: 'https://www.somewhere.com'
     });
 } catch (error) {
-    console.log(error.url);
+    console.log(error.url); //https://www.somewhere.com
     console.log(error.status); //504
     console.log(error.stack); // Error.stack
 }
@@ -50,7 +50,7 @@ try {
       status: 504, url: 'https://www.somewhere.com'
     });
 } catch (error) {
-    console.log(error.url);
+    console.log(error.url); //https://www.somewhere.com
     console.log(error.status); //504
     console.log(error.stack); // Error.stack
 }
