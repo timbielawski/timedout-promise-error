@@ -4,7 +4,7 @@ class TimedoutError extends Error {
     this.error = error;
   }
 }
-const timedoutPromise = (promise, ms = 1000, error = {}) => {
+const timedoutPromiseError = (promise, ms = 1000, error = {}) => {
   let timedoutError = new TimedoutError(error, ms);
   let timeout = new Promise((resolve, reject) => {
     let id = setTimeout(() => {
@@ -14,4 +14,4 @@ const timedoutPromise = (promise, ms = 1000, error = {}) => {
   });
   return Promise.race([promise, timeout]);
 };
-export default timedoutPromise;
+export default timedoutPromiseError;

@@ -1,11 +1,16 @@
 {
   "name": "timedout-promise-error",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "add a timeout on a promise with a configurable timeout error ",
-  "main": "lib/index",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "scripts": {
     "test": "jest",
-    "build": "babel src -d lib",
+    "build": "babel src -d dist && cp src/index.d.ts dist/index.d.ts",
     "prettier": "prettier ./src/**/*.js ./__tests__/**/*.js ./__mocks__/**/*.js   --write "
   },
   "repository": {
