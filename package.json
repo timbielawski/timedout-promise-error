@@ -1,6 +1,6 @@
 {
   "name": "timedout-promise-error",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "add a timeout on a promise with a configurable timeout error ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
